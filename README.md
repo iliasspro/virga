@@ -4,6 +4,8 @@ One-page site for VIRGA (360° digital & creative agency). Vite + vanilla JS, GS
 
 Live: https://virga-production.vercel.app
 
+<img src="docs/preview.webp" width="640" alt="VIRGA preview">
+
 ## Run
 
 ```bash
