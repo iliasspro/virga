@@ -1,0 +1,515 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>VIRGA — Agence digitale & créative 360° · Production audiovisuelle, Web, IA</title>
+    <meta name="description" content="VIRGA, votre partenaire 360° en stratégie digitale et production visuelle : films, animation 3D, événements, sites web, IA et automatisations. Création, data et storytelling au service de votre marque." />
+    <meta name="theme-color" content="#05041a" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="VIRGA — Agence digitale & créative 360°" />
+    <meta property="og:description" content="Création, data et storytelling s’unissent pour révéler la puissance de votre marque." />
+    <meta property="og:url" content="https://virga-production.vercel.app/" />
+    <meta property="og:image" content="https://virga-production.vercel.app/og.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="fr_FR" />
+    <link rel="canonical" href="https://virga-production.vercel.app/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preload" as="image" href="/media/villa-entrance.webp" type="image/webp" />
+  </head>
+  <body class="is-loading">
+    <a class="skip-link" href="#main">Aller au contenu</a>
+
+    <!-- ============ PRELOADER ============ -->
+    <div class="preloader" aria-hidden="true">
+      <div class="preloader__inner">
+        <div class="preloader__logo"><!--@svg:wordmark-preloader--></div>
+        <p class="preloader__sub">Production</p>
+        <div class="preloader__bar"><span></span></div>
+        <p class="preloader__tc"><span class="preloader__rec"></span><span data-preload-tc>00:00:00:00</span></p>
+      </div>
+    </div>
+
+    <!-- ============ GLOBAL UI ============ -->
+    <div class="atmos" aria-hidden="true"><span class="atmos__a"></span><span class="atmos__b"></span><span class="atmos__c"></span></div>
+    <div class="grain" aria-hidden="true"></div>
+    <div class="cursor" aria-hidden="true"><div class="cursor__ring"><span class="cursor__label"></span></div><div class="cursor__dot"></div></div>
+
+    <header class="header" data-header>
+      <a class="header__logo" href="#top" aria-label="VIRGA — accueil">
+        <span class="header__mark"><!--@svg:mark--></span>
+        <span class="header__word"><!--@svg:wordmark--></span>
+      </a>
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="#expertises" class="nav__link"><span data-roll>Expertises</span></a>
+        <a href="#projets" class="nav__link"><span data-roll>Projets</span></a>
+        <a href="#methode" class="nav__link"><span data-roll>Méthode</span></a>
+        <a href="#studio" class="nav__link"><span data-roll>Studio</span></a>
+        <a href="#contact" class="nav__link"><span data-roll>Contact</span></a>
+      </nav>
+      <a href="#contact" class="btn btn--sm btn--primary header__cta" data-magnetic><span data-roll>Démarrer un projet</span><i class="btn__arrow" aria-hidden="true"></i></a>
+      <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+    </header>
+
+    <div class="menu" id="menu" aria-hidden="true">
+      <nav class="menu__nav" aria-label="Menu mobile">
+        <a href="#expertises"><small>01</small>Expertises</a>
+        <a href="#projets"><small>02</small>Projets</a>
+        <a href="#methode"><small>03</small>Méthode</a>
+        <a href="#studio"><small>04</small>Studio</a>
+        <a href="#contact"><small>05</small>Contact</a>
+      </nav>
+      <div class="menu__foot">
+        <a href="#contact" class="btn btn--primary">Démarrer un projet<i class="btn__arrow" aria-hidden="true"></i></a>
+        <p class="mono">Rabat, Maroc — <span data-clock>--:--</span></p>
+      </div>
+    </div>
+
+    <div class="hud" aria-hidden="true">
+      <span class="hud__rec"></span><span class="hud__tc" data-hud-tc>00:00:00:00</span><span class="hud__sc" data-hud-sc>SC.01 — Accueil</span>
+    </div>
+
+    <main id="main">
+      <!-- ============ HERO ============ -->
+      <section class="hero" id="top" data-section="Accueil">
+        <div class="hero__media">
+          <canvas class="hero__gl" aria-hidden="true"></canvas>
+          <div class="hero__fallback" aria-hidden="true"><img src="/media/villa-entrance.webp" alt="" width="1310" height="738" /></div>
+        </div>
+        <div class="hero__shade" aria-hidden="true"></div>
+
+        <svg class="hero__curve" viewBox="0 0 1440 900" preserveAspectRatio="none" aria-hidden="true">
+          <defs>
+            <linearGradient id="curve-grad" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stop-color="#8f3df5" />
+              <stop offset=".5" stop-color="#d457ff" />
+              <stop offset="1" stop-color="#7a5cff" />
+            </linearGradient>
+          </defs>
+          <path class="hero__curve-glow" d="M-40,520 C80,470 170,430 250,440 C420,462 520,720 760,722 C1000,724 1080,330 1220,220 C1300,158 1380,128 1480,126" />
+          <path class="hero__curve-line" d="M-40,520 C80,470 170,430 250,440 C420,462 520,720 760,722 C1000,724 1080,330 1220,220 C1300,158 1380,128 1480,126" />
+        </svg>
+        <div class="hero__node" aria-hidden="true"><span></span></div>
+        <svg class="hero__arrow" viewBox="0 0 60 60" aria-hidden="true"><path d="M14 46 L42 18 M22 16 H44 V38" /></svg>
+        <a href="#contact" class="hero__seal" aria-label="Démarrer un projet" data-cursor="brief">
+          <svg class="hero__seal-ring" viewBox="0 0 120 120" aria-hidden="true"><defs><path id="seal-path" d="M60,60 m-47,0 a47,47 0 1,1 94,0 a47,47 0 1,1 -94,0" /></defs><text><textPath href="#seal-path">STRATÉGIE • CONTENU • WEB • FILM • 3D • IA • </textPath></text></svg>
+          <span class="hero__seal-mark"><!--@svg:mark--></span>
+        </a>
+
+        <div class="viewfinder" aria-hidden="true">
+          <span class="vf-corner vf-corner--tl"></span><span class="vf-corner vf-corner--tr"></span>
+          <span class="vf-corner vf-corner--bl"></span><span class="vf-corner vf-corner--br"></span>
+          <div class="vf-top">
+            <p class="vf-rec"><i></i>REC <span data-hero-tc>00:00:00:00</span></p>
+            <p class="vf-specs">4K · 25 FPS · ISO 800 · ƒ/2.8</p>
+          </div>
+          <div class="vf-bottom">
+            <p class="vf-scene"><span class="vf-scene__n" data-scene-n>SC.01</span> <span data-scene-label>Villa privée</span> <em data-scene-tag>Immobilier</em></p>
+            <p class="vf-hint"><span class="vf-hint__lens"></span>Déplacez la lentille pour révéler l’image</p>
+          </div>
+        </div>
+
+        <div class="hero__content container">
+          <p class="eyebrow hero__eyebrow"><span class="rec-dot"></span>Bienvenue chez VIRGA</p>
+          <h1 class="hero__title">
+            <span class="hero__line">Votre partenaire <span class="badge360"><b>360°</b></span></span>
+            <span class="hero__line">en stratégie digitale</span>
+            <span class="hero__line">&amp; production <em class="serif">visuelle</em></span>
+          </h1>
+          <div class="hero__bottom">
+            <p class="hero__lead">Création, data et storytelling s’unissent pour révéler la puissance de votre marque.</p>
+            <div class="hero__ctas">
+              <a href="#contact" class="btn btn--primary btn--lg" data-magnetic><span data-roll>Démarrer un projet</span><i class="btn__arrow" aria-hidden="true"></i></a>
+              <a href="#projets" class="btn btn--ghost btn--lg" data-magnetic><i class="btn__play" aria-hidden="true"></i><span data-roll>Voir nos réalisations</span></a>
+            </div>
+          </div>
+        </div>
+
+        <a href="#film" class="hero__scroll" aria-label="Défiler vers la suite"><span>Scroll</span><i></i></a>
+      </section>
+
+      <!-- ============ MARQUEE ============ -->
+      <section class="marquee" aria-label="Nos métiers">
+        <div class="marquee__row" data-marquee="1">
+          <div class="marquee__track"><!--@marquee:1--></div>
+        </div>
+        <div class="marquee__row marquee__row--outline" data-marquee="-1">
+          <div class="marquee__track"><!--@marquee:2--></div>
+        </div>
+      </section>
+
+      <!-- ============ FEATURED FILM (FPV fly-through) ============ -->
+      <section class="fly" id="film" data-section="Film à la une">
+        <div class="fly__pin">
+          <div class="fly__frame">
+            <div class="fly__zoom">
+              <img class="fly__img" src="/media/fes-alley.webp" alt="Ruelle de la médina de Fès filmée en drone FPV" width="1086" height="451" loading="lazy" decoding="async" />
+              <img class="fly__ghost fly__ghost--1" src="/media/fes-alley.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" />
+              <img class="fly__ghost fly__ghost--2" src="/media/fes-alley.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" />
+            </div>
+            <div class="fly__vignette"></div>
+            <div class="fly__hud mono" aria-hidden="true">
+              <span>FPV · 4K</span><span data-fly-alt>ALT 012 m</span><span data-fly-spd>SPD 00 km/h</span>
+            </div>
+          </div>
+          <div class="fly__text container">
+            <p class="eyebrow">Film à la une</p>
+            <h2 class="fly__title"><span>Visit Morocco</span> <em class="serif">Originals</em></h2>
+            <p class="fly__sub">Fès, vue par un drone FPV. Une plongée dans la médina, pensée pour faire voyager.</p>
+            <button class="btn btn--primary btn--lg" data-video="fes" data-cursor="play" data-magnetic><i class="btn__play" aria-hidden="true"></i><span data-roll>Regarder le film</span><small class="btn__meta">01:42</small></button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ ABOUT ============ -->
+      <section class="about" id="studio" data-section="Qui nous sommes">
+        <div class="container">
+          <div class="about__head">
+            <p class="eyebrow">Qui nous sommes</p>
+            <p class="about__count mono"><span>VIRGA</span><span>Agence 360°</span></p>
+          </div>
+          <h2 class="about__statement" data-scrub-words>
+            Des solutions digitales <span class="pill"><img src="/media/villa-living-sm.webp" alt="" width="720" height="406" loading="lazy" /></span> et créatives <span class="pill pill--alt"><img src="/media/fes-lattice-sm.webp" alt="" width="720" height="314" loading="lazy" /></span> pour valoriser votre entreprise.
+          </h2>
+          <div class="about__grid">
+            <p data-reveal>Nous accompagnons les dirigeants de A à Z : stratégie, contenus, sites web et vidéo. Objectif : une présence claire, crédible et efficace.</p>
+            <p data-reveal>Nos équipes seniors conçoivent des messages simples et forts. Nous planifions, produisons et diffusons des contenus qui expliquent, séduisent et convertissent.</p>
+            <p data-reveal>Avec des indicateurs lisibles et un suivi régulier, vous voyez l’impact sur l’image, les leads, les ventes et le ROI. Moins de complexité, plus de résultats durables.</p>
+          </div>
+
+          <div class="vmd">
+            <article class="vmd__card" data-spotlight>
+              <div class="vmd__icon"><svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="22" class="ic-line" /><path class="ic-blade" d="M32 10 A22 22 0 0 1 54 32 L32 32 Z" /><path class="ic-blade ic-blade--2" d="M32 32 L54 32 A22 22 0 0 1 43 51 Z" /><circle cx="32" cy="32" r="3.5" class="ic-fill" /></svg></div>
+              <p class="vmd__n mono">01</p>
+              <h3>Notre Vision</h3>
+              <p>Mettre le digital au service des dirigeants : image forte, croissance saine, résultats mesurables.</p>
+            </article>
+            <article class="vmd__card" data-spotlight>
+              <div class="vmd__icon"><svg viewBox="0 0 64 64" aria-hidden="true"><path class="ic-line" d="M4 40 C14 30 20 28 26 30 C34 33 38 46 48 44 C54 43 57 30 60 22" /><circle cx="26" cy="30" r="5" class="ic-node" /><path class="ic-line" d="M50 14 L60 22 L52 30" /></svg></div>
+              <p class="vmd__n mono">02</p>
+              <h3>Notre Mission</h3>
+              <p>Relier stratégie, contenu et technologie pour transformer chaque interaction en opportunité de business claire.</p>
+            </article>
+            <article class="vmd__card" data-spotlight>
+              <div class="vmd__icon"><svg viewBox="0 0 64 64" aria-hidden="true"><rect x="18" y="6" width="28" height="52" rx="3" class="ic-line" /><g class="ic-holes"><rect x="21" y="11" width="4" height="4" /><rect x="21" y="21" width="4" height="4" /><rect x="21" y="31" width="4" height="4" /><rect x="21" y="41" width="4" height="4" /><rect x="21" y="51" width="4" height="4" /><rect x="39" y="11" width="4" height="4" /><rect x="39" y="21" width="4" height="4" /><rect x="39" y="31" width="4" height="4" /><rect x="39" y="41" width="4" height="4" /><rect x="39" y="51" width="4" height="4" /></g><rect x="28" y="16" width="8" height="12" class="ic-fill" /><rect x="28" y="36" width="8" height="12" class="ic-fill ic-fill--2" /></svg></div>
+              <p class="vmd__n mono">03</p>
+              <h3>Notre Devise</h3>
+              <p>Imagination guidée par la donnée. Des contenus qui captent, des décisions qui avancent.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ SERVICES ============ -->
+      <section class="services" id="expertises" data-section="Expertises">
+        <div class="container">
+          <header class="section-head">
+            <p class="eyebrow">Offres &amp; Expertises</p>
+            <h2 class="h2" data-split>Nos projets créatifs donnent vie à votre histoire et servent vos <em class="serif">objectifs</em>.</h2>
+          </header>
+          <!--@services-->
+        </div>
+        <div class="svc-float" aria-hidden="true"><div class="svc-float__inner"><!--@services-media--></div></div>
+      </section>
+
+      <!-- ============ LAB (Web / IA / Automation) ============ -->
+      <section class="lab" id="lab" data-section="VIRGA Lab">
+        <div class="container lab__grid">
+          <div class="lab__copy">
+            <p class="eyebrow eyebrow--teal">VIRGA Lab — Web · IA · Automatisation</p>
+            <h2 class="h2" data-split>Quand la créa rencontre la <em class="serif">tech</em>.</h2>
+            <p class="lab__lead" data-reveal>Sites web, applications, agents IA et automatisations : nous construisons les outils qui transforment votre audience en clients, et qui libèrent du temps à vos équipes.</p>
+            <ul class="lab__list" data-reveal>
+              <li><span class="mono">01</span>Sites vitrines, e-commerce &amp; plateformes sur mesure</li>
+              <li><span class="mono">02</span>Assistants &amp; agents IA connectés à vos données</li>
+              <li><span class="mono">03</span>Workflows automatisés : CRM, WhatsApp, e-mail, reporting</li>
+              <li><span class="mono">04</span>Intégrations, API &amp; tableaux de bord</li>
+            </ul>
+            <a href="#contact" class="btn btn--teal" data-brief="Web & Apps" data-magnetic><span data-roll>Parler de mon projet tech</span><i class="btn__arrow" aria-hidden="true"></i></a>
+          </div>
+
+          <div class="lab__demo" data-lab>
+            <div class="lab__tabs" role="tablist" aria-label="Démonstrations">
+              <button role="tab" aria-selected="true" data-tab="flow">Automatisation</button>
+              <button role="tab" aria-selected="false" data-tab="ai">Agent IA</button>
+              <button role="tab" aria-selected="false" data-tab="web">Web &amp; Apps</button>
+              <span class="lab__tabs-ink" aria-hidden="true"></span>
+            </div>
+            <div class="lab__window">
+              <div class="lab__bar"><i></i><i></i><i></i><span class="mono" data-lab-title>virga.lab / workflow — lead-to-client</span></div>
+
+              <!-- Flow -->
+              <div class="lab__panel is-active" data-panel="flow" role="tabpanel">
+                <svg class="flow" viewBox="0 0 560 330" aria-label="Exemple de workflow automatisé">
+                  <defs>
+                    <linearGradient id="flow-grad" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#2ef0b4" /><stop offset="1" stop-color="#b743f7" /></linearGradient>
+                  </defs>
+                  <g class="flow__links">
+                    <path id="fl-1" d="M118,66 C170,66 170,165 222,165" />
+                    <path id="fl-2" d="M118,165 C170,165 170,165 222,165" />
+                    <path id="fl-3" d="M118,264 C170,264 170,165 222,165" />
+                    <path id="fl-4" d="M338,165 C380,165 380,80 424,80" />
+                    <path id="fl-5" d="M338,165 C380,165 380,250 424,250" />
+                    <path id="fl-6" d="M482,108 C482,150 482,180 482,222" />
+                  </g>
+                  <g class="flow__nodes">
+                    <g class="fnode" data-node="0" transform="translate(16,42)"><rect width="102" height="48" rx="12" /><text x="16" y="21">Site web</text><text x="16" y="37" class="sub">formulaire</text></g>
+                    <g class="fnode" data-node="1" transform="translate(16,141)"><rect width="102" height="48" rx="12" /><text x="16" y="21">Instagram</text><text x="16" y="37" class="sub">DM &amp; ads</text></g>
+                    <g class="fnode" data-node="2" transform="translate(16,240)"><rect width="102" height="48" rx="12" /><text x="16" y="21">WhatsApp</text><text x="16" y="37" class="sub">message</text></g>
+                    <g class="fnode fnode--ai" data-node="3" transform="translate(222,120)"><rect width="116" height="90" rx="18" /><text x="58" y="40" text-anchor="middle" class="big">Agent IA</text><text x="58" y="60" text-anchor="middle" class="sub">qualifie · résume</text><circle class="fnode__pulse" cx="58" cy="45" r="44" /></g>
+                    <g class="fnode" data-node="4" transform="translate(424,56)"><rect width="116" height="52" rx="12" /><text x="16" y="23">CRM</text><text x="16" y="40" class="sub">fiche + score</text></g>
+                    <g class="fnode" data-node="5" transform="translate(424,222)"><rect width="116" height="52" rx="12" /><text x="16" y="23">Relance auto</text><text x="16" y="40" class="sub">WhatsApp · e-mail</text></g>
+                  </g>
+                  <g class="flow__packets"></g>
+                </svg>
+                <div class="lab__log mono" aria-live="off"><p data-log></p></div>
+              </div>
+
+              <!-- AI chat -->
+              <div class="lab__panel" data-panel="ai" role="tabpanel" hidden>
+                <div class="chat" data-chat>
+                  <div class="chat__msg chat__msg--user"><p>Bonjour ! Il me faut une vidéo corporate pour le lancement de notre nouvelle offre. Vous pouvez m’aider ?</p></div>
+                  <div class="chat__msg chat__msg--ai"><span class="chat__avatar" aria-hidden="true"><!--@svg:mark--></span><p data-type>Bien sûr ! Pour cadrer le projet : quelle durée visez-vous, sur quels canaux sera-t-elle diffusée, et pour quelle date ? Je prépare ensuite une note d’intention et je transmets votre brief à l’équipe production.</p></div>
+                  <div class="chat__chips"><span>Note d’intention</span><span>Planning</span><span>Brief transmis ✓</span></div>
+                </div>
+              </div>
+
+              <!-- Web -->
+              <div class="lab__panel" data-panel="web" role="tabpanel" hidden>
+                <div class="code-split">
+                  <pre class="code mono" aria-label="Extrait de code"><code data-code></code></pre>
+                  <div class="mini-site" aria-hidden="true">
+                    <div class="mini-site__nav"><i></i><b></b><b></b><b></b></div>
+                    <div class="mini-site__hero"><span></span><span></span><em></em></div>
+                    <div class="mini-site__cards"><i></i><i></i><i></i></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="lab__note mono">Démonstration illustrative — chaque solution est conçue sur mesure.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ SIGNATURE ============ -->
+      <section class="signature" data-section="Notre signature">
+        <div class="container">
+          <header class="section-head section-head--center">
+            <p class="eyebrow">Notre signature</p>
+            <h2 class="h2" data-split>Exigence créative, exécution senior, résultats mesurables — <em class="serif grad-text">sans compromis.</em></h2>
+          </header>
+          <div class="sig">
+            <article class="sig__card" data-reveal-card>
+              <div class="sig__media"><img src="/media/fes-lattice-sm.webp" srcset="/media/fes-lattice-sm.webp 720w, /media/fes-lattice.webp 1031w" sizes="(max-width: 800px) 90vw, 33vw" alt="" width="1031" height="449" loading="lazy" decoding="async" /><img class="sig__color" src="/media/fes-lattice-sm.webp" srcset="/media/fes-lattice-sm.webp 720w, /media/fes-lattice.webp 1031w" sizes="(max-width: 800px) 90vw, 33vw" alt="" loading="lazy" decoding="async" /></div>
+              <div class="sig__body"><p class="mono">01 / Vision</p><h3>Vision créative</h3><p>Des concepts distinctifs qui se remarquent, servent vos objectifs et positionnent votre marque au-dessus du bruit.</p></div>
+            </article>
+            <article class="sig__card" data-reveal-card>
+              <div class="sig__media"><img src="/media/bolt-portrait-sm.webp" srcset="/media/bolt-portrait-sm.webp 720w, /media/bolt-portrait.webp 1086w" sizes="(max-width: 800px) 90vw, 33vw" alt="" width="1086" height="500" loading="lazy" decoding="async" /><img class="sig__color" src="/media/bolt-portrait-sm.webp" srcset="/media/bolt-portrait-sm.webp 720w, /media/bolt-portrait.webp 1086w" sizes="(max-width: 800px) 90vw, 33vw" alt="" loading="lazy" decoding="async" /></div>
+              <div class="sig__body"><p class="mono">02 / Image</p><h3>Qualité cinématographique</h3><p>Images impeccables, sound design travaillé et finitions premium pour des expériences mémorables et durables.</p></div>
+            </article>
+            <article class="sig__card" data-reveal-card>
+              <div class="sig__media"><img src="/media/aramco-hall-sm.webp" srcset="/media/aramco-hall-sm.webp 720w, /media/aramco-hall.webp 874w" sizes="(max-width: 800px) 90vw, 33vw" alt="" width="874" height="372" loading="lazy" decoding="async" /><img class="sig__color" src="/media/aramco-hall-sm.webp" srcset="/media/aramco-hall-sm.webp 720w, /media/aramco-hall.webp 874w" sizes="(max-width: 800px) 90vw, 33vw" alt="" loading="lazy" decoding="async" /></div>
+              <div class="sig__body"><p class="mono">03 / Delivery</p><h3>Fiabilité éprouvée</h3><p>Direction senior, process maîtrisés, délais tenus : un partenaire responsable qui livre ce qui a été promis.</p></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ WORK (film strip) ============ -->
+      <section class="work" id="projets" data-section="Projets à la une">
+        <div class="work__pin">
+          <div class="work__head container">
+            <div>
+              <p class="eyebrow">Projets à la une</p>
+              <h2 class="h2" data-split>Mettre en scène nos projets créatifs et donner vie aux <em class="serif">histoires</em>.</h2>
+            </div>
+            <p class="work__intro" data-reveal>Nos projets phares révèlent notre exigence créative et notre maîtrise technique. Chaque réalisation capte l’émotion, le détail et l’instant pour marquer durablement. Du film corporate aux récits cinématographiques, nous donnons vie à votre vision.</p>
+          </div>
+          <div class="strip" data-strip>
+            <div class="strip__holes strip__holes--top" aria-hidden="true"></div>
+            <div class="strip__track" data-strip-track>
+              <!--@projects-->
+            </div>
+            <div class="strip__holes strip__holes--bottom" aria-hidden="true"></div>
+          </div>
+          <div class="work__foot container mono" aria-hidden="true">
+            <span><b data-work-i>01</b> / <!--@projects-count--></span>
+            <span class="work__bar"><i data-work-bar></i></span>
+            <span data-work-tc>00:00:00:00</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ METHOD (NLE timeline) ============ -->
+      <section class="method" id="methode" data-section="Méthode">
+        <div class="method__pin">
+          <div class="container">
+            <header class="section-head method__head">
+              <p class="eyebrow">Notre Méthode VIRGA</p>
+              <h2 class="h2" data-split>Une méthode unique, du cadrage à la performance, applicable à tout le <em class="serif">360°</em>.</h2>
+            </header>
+            <div class="nle" data-nle>
+              <div class="nle__monitor">
+                <div class="nle__screen">
+                  <!--@method-screens-->
+                  <span class="nle__safe" aria-hidden="true"></span>
+                </div>
+                <div class="nle__transport mono" aria-hidden="true">
+                  <span>Programme : Méthode_VIRGA</span>
+                  <span class="nle__tc" data-nle-tc>00:00:00:00</span>
+                  <span>25 fps</span>
+                </div>
+              </div>
+              <div class="nle__timeline" aria-hidden="true">
+                <div class="nle__ruler mono"><span>00:00</span><span>00:05</span><span>00:10</span><span>00:15</span><span>00:20</span></div>
+                <div class="nle__track nle__track--v2"><span class="nle__lbl mono">V2</span><div class="nle__lane"><i style="left:4%;width:16%">Titre</i><i style="left:31%;width:12%">Lower third</i><i style="left:56%;width:14%">Motion</i><i style="left:80%;width:15%">Pack-shot</i></div></div>
+                <div class="nle__track nle__track--v1"><span class="nle__lbl mono">V1</span><div class="nle__lane"><!--@method-clips--></div></div>
+                <div class="nle__track nle__track--a1"><span class="nle__lbl mono">A1</span><div class="nle__lane"><div class="nle__wave" data-wave></div></div></div>
+                <div class="nle__playhead" data-playhead><span></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ PARTNERS ============ -->
+      <section class="partners" data-section="Partenariats">
+        <div class="container partners__head">
+          <p class="eyebrow">Partenariats de référence</p>
+          <h2 class="h3">Ils nous confient leur image.</h2>
+        </div>
+        <div class="partners__rows">
+          <div class="partners__row"><div class="partners__track"><!--@partners--></div></div>
+          <div class="partners__row partners__row--rev"><div class="partners__track"><!--@partners--></div></div>
+        </div>
+      </section>
+
+      <!-- ============ CONTACT ============ -->
+      <section class="contact" id="contact" data-section="Contact">
+        <div class="container">
+          <header class="contact__head">
+            <p class="eyebrow">Contact</p>
+            <h2 class="contact__title" data-split>Et si on tournait votre prochaine <em class="serif">histoire</em> ?</h2>
+            <p class="contact__lead" data-reveal>Un film, un site, une automatisation ? Racontez-nous votre projet en trois étapes : nous revenons vers vous avec une première approche.</p>
+          </header>
+
+          <div class="contact__grid">
+            <form class="brief" data-brief-form novalidate>
+              <div class="brief__progress" aria-hidden="true">
+                <svg viewBox="0 0 300 24" preserveAspectRatio="none"><path class="brief__track" d="M2,12 C60,2 90,22 150,12 C210,2 240,22 298,12" /><path class="brief__fill" d="M2,12 C60,2 90,22 150,12 C210,2 240,22 298,12" /></svg>
+                <ol class="brief__steps mono"><li class="is-active">01 Projet</li><li>02 Cadre</li><li>03 Contact</li></ol>
+              </div>
+
+              <fieldset class="brief__step is-active" data-step="0">
+                <legend class="brief__q">Quel est votre projet ?<small>Plusieurs choix possibles</small></legend>
+                <div class="chips" data-group="services"><!--@brief-chips--></div>
+              </fieldset>
+
+              <fieldset class="brief__step" data-step="1" hidden>
+                <legend class="brief__q">Quel cadre pour ce projet ?<small>Facultatif, mais ça nous aide à vous répondre juste</small></legend>
+                <p class="brief__label mono">Budget estimé</p>
+                <div class="chips chips--single" data-group="budget">
+                  <label class="chip"><input type="radio" name="budget" value="Moins de 50 000 MAD" /><span>&lt; 50k MAD</span></label>
+                  <label class="chip"><input type="radio" name="budget" value="50 000 – 150 000 MAD" /><span>50 – 150k MAD</span></label>
+                  <label class="chip"><input type="radio" name="budget" value="150 000 – 500 000 MAD" /><span>150 – 500k MAD</span></label>
+                  <label class="chip"><input type="radio" name="budget" value="Plus de 500 000 MAD" /><span>&gt; 500k MAD</span></label>
+                  <label class="chip"><input type="radio" name="budget" value="À définir" /><span>À définir</span></label>
+                </div>
+                <p class="brief__label mono">Échéance</p>
+                <div class="chips chips--single" data-group="timing">
+                  <label class="chip"><input type="radio" name="timing" value="Urgent (moins de 2 semaines)" /><span>Urgent</span></label>
+                  <label class="chip"><input type="radio" name="timing" value="Dans 1 à 2 mois" /><span>1 – 2 mois</span></label>
+                  <label class="chip"><input type="radio" name="timing" value="Flexible" /><span>Flexible</span></label>
+                </div>
+              </fieldset>
+
+              <fieldset class="brief__step" data-step="2" hidden>
+                <legend class="brief__q">Comment vous joindre ?</legend>
+                <div class="fields">
+                  <label class="field"><span>Nom complet *</span><input name="name" autocomplete="name" required /></label>
+                  <label class="field"><span>Entreprise</span><input name="company" autocomplete="organization" /></label>
+                  <label class="field"><span>E-mail *</span><input name="email" type="email" autocomplete="email" required /></label>
+                  <label class="field"><span>Téléphone</span><input name="phone" type="tel" autocomplete="tel" /></label>
+                  <label class="field field--full"><span>Votre projet en quelques mots</span><textarea name="message" rows="3"></textarea></label>
+                </div>
+              </fieldset>
+
+              <div class="brief__done" hidden>
+                <div class="clap" aria-hidden="true"><span class="clap__top"></span><span class="clap__body">VIRGA · SC.01 · TAKE 1</span></div>
+                <h3>Clap de début !</h3>
+                <p data-done-text>Votre brief est prêt. Nous revenons vers vous très vite.</p>
+              </div>
+
+              <div class="brief__nav">
+                <button type="button" class="btn btn--ghost" data-prev hidden>Retour</button>
+                <p class="brief__error" role="alert" data-error></p>
+                <button type="button" class="btn btn--primary" data-next data-magnetic><span data-roll>Continuer</span><i class="btn__arrow" aria-hidden="true"></i></button>
+                <button type="submit" class="btn btn--primary" data-submit hidden data-magnetic><span data-roll>Envoyer mon brief</span><i class="btn__arrow" aria-hidden="true"></i></button>
+              </div>
+            </form>
+
+            <aside class="direct">
+              <p class="eyebrow">En direct</p>
+              <a class="direct__item" href="mailto:kcbenbarka@gmail.com" data-contact-email><span class="mono">E-mail</span><b data-email-text>kcbenbarka@gmail.com</b><i class="btn__arrow" aria-hidden="true"></i></a>
+              <a class="direct__item" href="#" data-contact-phone hidden><span class="mono">Téléphone</span><b data-phone-text></b><i class="btn__arrow" aria-hidden="true"></i></a>
+              <a class="direct__item direct__item--wa" href="#" target="_blank" rel="noopener" data-contact-wa hidden><span class="mono">WhatsApp</span><b>Écrire sur WhatsApp</b><i class="btn__arrow" aria-hidden="true"></i></a>
+              <div class="direct__place">
+                <p class="mono">Studio</p>
+                <p><b>Rabat, Maroc</b><br />Interventions au Maroc et à l’international</p>
+                <p class="mono direct__clock"><i></i><span data-clock>--:--</span> — heure locale</p>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <p class="footer__tag">Agence digitale &amp; créative 360° — stratégie, contenu, web/app, film/3D &amp; gaming.</p>
+          <a href="#contact" class="btn btn--primary" data-magnetic><span data-roll>Démarrer un projet</span><i class="btn__arrow" aria-hidden="true"></i></a>
+        </div>
+        <div class="footer__word" aria-hidden="true"><!--@svg:wordmark-footer--></div>
+        <div class="footer__bottom mono">
+          <span>© <span data-year>2026</span> VIRGA Production</span>
+          <span class="footer__socials" data-socials></span>
+          <a href="#top" class="footer__top-link">Retour en haut ↑</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ============ MODALS ============ -->
+    <div class="pmodal" role="dialog" aria-modal="true" aria-labelledby="pm-title" hidden data-pmodal>
+      <div class="pmodal__bg" data-close></div>
+      <div class="pmodal__panel">
+        <button class="pmodal__close" data-close aria-label="Fermer"><span></span><span></span></button>
+        <div class="pmodal__media" data-pm-media></div>
+        <div class="pmodal__body">
+          <p class="mono pmodal__meta" data-pm-meta></p>
+          <h3 id="pm-title" class="pmodal__title" data-pm-title></h3>
+          <p class="pmodal__text" data-pm-text></p>
+          <dl class="pmodal__facts" data-pm-facts></dl>
+          <div class="pmodal__ctas">
+            <button class="btn btn--primary" data-pm-play><i class="btn__play" aria-hidden="true"></i><span data-roll>Regarder le film</span></button>
+            <button class="btn btn--ghost" data-pm-next><span data-roll>Projet suivant</span><i class="btn__arrow" aria-hidden="true"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="vmodal" role="dialog" aria-modal="true" aria-label="Lecteur vidéo" hidden data-vmodal>
+      <div class="vmodal__bg" data-close></div>
+      <div class="vmodal__frame">
+        <button class="vmodal__close" data-close aria-label="Fermer le lecteur"><span></span><span></span></button>
+        <div class="vmodal__player" data-vplayer></div>
+        <p class="vmodal__caption mono" data-vcaption></p>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

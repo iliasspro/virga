@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-10 -10 2270 510" fill="none">
+  <defs>
+    <linearGradient id="wm-bar" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3b82d8"/><stop offset=".55" stop-color="#4a6cc0"/><stop offset="1" stop-color="#6f5fb0"/></linearGradient>
+  </defs>
+  <g stroke="currentColor" stroke-width="30" stroke-linejoin="miter" stroke-miterlimit="8">
+    <path class="wm-v" d="M16,6 L205,426 L394,6"/>
+    <path class="wm-r" d="M848,17 L1050,17 A114,114 0 0 1 1050,245 L935,245 M1000,245 L1156,462"/>
+    <path class="wm-g" d="M1665.6,74.4 A220,220 0 1 0 1670.9,380"/>
+    <path class="wm-arm" stroke-width="22" d="M1517,309 L1660,349 L1712,452"/>
+    <path class="wm-a" d="M1816,462 L2022,40 L2234,462"/>
+  </g>
+  <rect class="wm-i" x="540" y="5" width="90" height="457" fill="url(#wm-bar)"/>
+  <rect class="wm-stem" x="730" y="5" width="90" height="457" fill="url(#wm-bar)"/>
+  <circle class="wm-dot" cx="1510" cy="226" r="50" fill="currentColor"/>
+  <circle class="wm-ball" cx="1720" cy="478" r="28" fill="currentColor"/>
+</svg>
